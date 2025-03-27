@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusForward</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #100f0f;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: px;
+        }
+
+        .title {
+            font-size: 60px;
+            color: #37b3e9;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .headings-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .heading {
+            font-size: 40px;
+            color: #ffffff;
+            width: 200px;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Adds spacing between image containers */
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            flex: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .terminal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            font-family: monospace;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">FocusForward</div>
+        </div>
+
+        <div class="headings-container">
+            <div class="heading">Live video</div>
+            <div class="heading">Depth Map</div>
+        </div>
+
+        <div class="images-container">
+            <div class="image-container">
+                <img src="/video_feed" alt="Live Feed">
+            </div>
+            <div class="image-container">
+                <img src="/depth_video_feed" alt="Depth Map">
+            </div>
+        </div>
+
+        <div class="terminal">Output will appear here from Flask</div>
+    </div>
+</body>
+</html>
+
+
+
