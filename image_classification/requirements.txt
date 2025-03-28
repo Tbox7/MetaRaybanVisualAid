@@ -1,6 +1,6 @@
 ﻿asttokens==3.0.0
 audioop-lts==0.2.1
-clip @ git+https://github.com/DepthAnything/Depth-Anything-V2
+clip @ git+https://github.com/openai/CLIP.git
 colorama==0.4.6
 comm==0.2.2
 comtypes==1.4.10
