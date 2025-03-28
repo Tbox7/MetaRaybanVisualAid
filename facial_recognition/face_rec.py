@@ -3,7 +3,6 @@ import cv2
 import numpy as np
 video_capture = cv2.VideoCapture(0)
 # Load images of known individuals and generate their face encodings
-# These encodings are numerical representations of facial features
 ryan_image = face_recognition.load_image_file("faces/ryan.png")
 ryan_face_encoding = face_recognition.face_encodings(ryan_image)[0]
 martha_image = face_recognition.load_image_file("faces/martha.png")
@@ -12,18 +11,25 @@ dave_image = face_recognition.load_image_file("faces/dave.png")
 dave_face_encoding = face_recognition.face_encodings(dave_image)[0]
 vijay_image = face_recognition.load_image_file("faces/vijay.png")
 vijay_face_encoding = face_recognition.face_encodings(vijay_image)[0]
+#########################Template to add face##########################
+#<person>_image = face_recognition.load_image_file("faces/<person>.png")
+#<person>_face_encoding = face_recognition.face_encodings(<person>_image)[0]
+#replace <person> with the name of the png (tip:name the png as the same name as the person)
+################################################################3
 # Store the face encodings and corresponding names in lists
 known_face_encodings = [
     ryan_face_encoding,
     martha_face_encoding,
     dave_face_encoding,
     vijay_face_encoding
+    #add <person>_face_encoing here(tip: make sure the previous name has a ',')
 ]
 known_face_names = [
     "Ryan_reynolds",  
     "Martha_stewart",  
     "Dave_chappelle",  
-    "Vijay"            
+    "Vijay"
+    #make sure to keep the order consistent with the list above, just add the name of the person(tip: make sure the previous name has a ',')
 ]
 # Initialize variables to store face detection results
 face_locations = []  
