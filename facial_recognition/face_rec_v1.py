@@ -4,35 +4,30 @@ import numpy as np
 
 video_capture = cv2.VideoCapture(0)
 
-yeshwanth_image = face_recognition.load_image_file("faces/yeshwanth.png")
-yeshwanth_face_encoding = face_recognition.face_encodings(yeshwanth_image)[0]
+ryan_image = face_recognition.load_image_file("faces/ryan.png")
+ryan_face_encoding = face_recognition.face_encodings(ryan_image)[0]
 
-mason_image = face_recognition.load_image_file("faces/mason.png")
-mason_face_encoding = face_recognition.face_encodings(mason_image)[0]
+martha_image = face_recognition.load_image_file("faces/martha.png")
+martha_face_encoding = face_recognition.face_encodings(martha_image)[0]
 
-hamsan_image = face_recognition.load_image_file("faces/hamsan.png")
-hamsan_face_encoding = face_recognition.face_encodings(hamsan_image)[0]
+dave_image = face_recognition.load_image_file("faces/dave.png")
+dave_face_encoding = face_recognition.face_encodings(dave_image)[0]
 
-vj_image = face_recognition.load_image_file("faces/vijay.png")
-vijay_face_encoding = face_recognition.face_encodings(vj_image)[0]
-
-dhan_image = face_recognition.load_image_file("faces/dhanush.png")
-dhanush_face_encoding = face_recognition.face_encodings(dhan_image)[0]
+vijay_image = face_recognition.load_image_file("faces/vijay.png")
+vijay_face_encoding = face_recognition.face_encodings(vijay_image)[0]
 
 
 known_face_encodings = [
-    yeshwanth_face_encoding,
-    mason_face_encoding,
-    hamsan_face_encoding,
-    vijay_face_encoding,
-    dhanush_face_encoding
+    ryan_face_encoding,
+    martha_face_encoding,
+    dave_face_encoding,
+    vijay_face_encoding
 ]
 known_face_names = [
-    "Yeshwanth",
-    "Mason",
-    "Hamsan",
-    "Vijay",
-    "Dhanush"
+    "Ryan_reynolds",
+    "Martha_stewart",
+    "Dave_chappelle",
+    "Vijay"
 ]
 
 face_locations = []
