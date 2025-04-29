@@ -7,10 +7,11 @@ We broke down the project into four main parts: Depth Sense, Image Classificatio
 - **Face Recognition** was the easiest as there was a library that allowed for real-time face detection and recognition. You can upload anyone's photo in the file named "faces" and use the template we created in the code to add the person and then the program will identify faces using the webcam using opencv tools.  
 - **Image Classification** was just as easy, as there was already a pretrained model posted by OpenAi. We used their model with a carefully curated list of relevant objects we thought would showcase the capabilities of the model well. This feature lets the user to navigate the world with confidence. 
 - **Depth Sensing** was achieved through a model that the community contributed towards (see credits.) Depth-Anything-V2 is a monocular depth estimation model. It is both lightweight and fast making it a great model for us to use. This feature is important as it helps to identify objects that are getting too close to the wearers face. Whether it be a wall or running into a pole, it can help notify the person that something is right Infront of them. 
-- **Text to Speech** Arguably one of the most important features proved to be the hardest to get right. 
-## Schematics
+- **Text to Speech** Arguably one of the most important features proved to be the hardest to get right.
+## Flowchart
 ![image](https://github.com/user-attachments/assets/3ed5be88-7ee2-4b87-a419-5d621cc157c7)
-![image](https://github.com/user-attachments/assets/c1c6ce2c-d029-4897-a2f5-ad9c89052012)
+![image](https://github.com/user-attachments/assets/c1c6ce2c-d029-4897-a2f5-ad9c89052012) 
+
 ## Challenges we ran into
 Like mentioned above, Text to Speech, was incredibly challenging to get right. We tried many options, pyocr with pytesseract, paddleocr, GTTS, easyocr, and so much more. These models all struggled to have any kind of consistency. Debugging the problem, we discovered that all these models struggled with identify where and what the text is. It's post processed frames (black and white and denoised), was hard for even a human to make out what was written. The model we ended up using still isn't perfect but as a MVP and as a proof of concept, we believe this feature works and has lots of room for improvement. 
 ## Accomplishments that we're proud of
